@@ -255,7 +255,7 @@ formulier.addEventListener('submit', function (e) {
   var omschrijving = formulier.omschrijving.value.trim();
 
   if (!naam || !omschrijving) {
-    fout.textContent = 'Vul in ieder geval je naam en een omschrijving van de klus in.';
+    fout.textContent = 'Vul in ieder geval uw naam en een omschrijving van de klus in.';
     fout.hidden = false;
     return;
   }
