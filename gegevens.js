@@ -84,7 +84,7 @@ var GEGEVENS = {
   // haal de // aan het begin weg en vul de echte gegevens van de klant in:
   //   { naam: "Voornaam klant", plaats: "Hoorn", sterren: 4, klus: "Plafond hersteld", tekst: "Wat de klant schreef." },
   reviews: [
-
+    { naam: "Anja", plaats: "Purmerend", sterren: 5, klus: "Keuken geplaatst en afgekit, elektra afgemonteerd", tekst: "Wij zijn ontzettend tevreden over het werk van Nino! Hij heeft ons compleet ontzorgd bij het plaatsen van onze nieuwe keuken. In de planning stond 7 uur, maar Nino had de klus al binnen 3 uur geklaard! De keuken is netjes geplaatst en afgekit en ook de Perilex-aansluiting is vakkundig aangesloten. Alles ziet er keurig uit en we konden ons geen betere service wensen.\n\nWij komen zeker weer bij Nino terug voor een volgende klus. Bedankt voor het mooie werk, Nino! Nu kunnen wij weer heerlijk gaan koken! 😊" },
   ]
 
 };
