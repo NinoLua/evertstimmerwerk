@@ -243,7 +243,9 @@ a { color: var(--hout-donker); }
   background: rgba(47,42,36,.8); color: #fff;
   font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
   padding: 3px 10px; border-radius: 99px; pointer-events: none;
+  transition: opacity .2s;
 }
+.vn__label.weg { opacity: 0; }
 .vn__label--voor { left: 10px; }
 .vn__label--na { right: 10px; }
 .vn input[type=range] {

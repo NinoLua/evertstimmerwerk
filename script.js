@@ -137,10 +137,15 @@ function maakVoorNa(voor, na, tekst) {
   schuif.setAttribute('aria-label', 'Schuif tussen voor en na' + (tekst ? ': ' + tekst : ''));
   vn.appendChild(schuif);
 
+  var labelVoor = vn.querySelector('.vn__label--voor');
+  var labelNa = vn.querySelector('.vn__label--na');
   function zet(procent) {
     procent = Math.max(0, Math.min(100, procent));
     vn.style.setProperty('--pos', procent + '%');
     schuif.value = procent;
+    // Label verbergen zodra die kant (bijna) helemaal is weggeschoven
+    labelVoor.classList.toggle('weg', procent < 15);
+    labelNa.classList.toggle('weg', procent > 85);
   }
   schuif.addEventListener('input', function () { zet(Number(schuif.value)); });
 
