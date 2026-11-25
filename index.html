@@ -154,12 +154,28 @@
       <div class="wrap">
         <h2>Voorbeelden van mijn werk</h2>
         <p class="intro" id="fotos-intro">Hier komen binnenkort foto's van afgeronde klussen.</p>
+
+        <!-- Voor en na: wordt automatisch gevuld vanuit gegevens.js -->
+        <h3 class="sub-kop">Voor en na</h3>
+        <p class="klein">Schuif over de foto om het verschil te zien.</p>
+        <div class="vn-lijst" id="voor-na"></div>
+
+        <h3 class="sub-kop" id="meer-klussen-kop">Meer klussen</h3>
         <!-- De foto's hieronder worden automatisch gevuld vanuit gegevens.js -->
         <div class="galerij" id="galerij">
           <figure><div class="foto-leeg"><span>Foto volgt</span></div><figcaption>Onderhoudsklus</figcaption></figure>
           <figure><div class="foto-leeg"><span>Foto volgt</span></div><figcaption>Kozijn of deur</figcaption></figure>
           <figure><div class="foto-leeg"><span>Foto volgt</span></div><figcaption>Keukenrenovatie</figcaption></figure>
         </div>
+        <button class="knop knop--rand" id="meer-fotos" type="button" hidden>Meer foto's tonen</button>
+      </div>
+    </section>
+
+    <!-- ===== Reviews: alleen zichtbaar als er reviews in gegevens.js staan ===== -->
+    <section id="reviews" class="sectie" hidden>
+      <div class="wrap">
+        <h2>Wat klanten zeggen</h2>
+        <div class="reviews" id="reviewlijst"></div>
       </div>
     </section>
 
@@ -222,6 +238,13 @@
       <p class="klein">Deze website gebruikt geen cookies en verzamelt geen gegevens. <br>&copy; <span id="jaar">2026</span> Everts Timmerwerk</p>
     </div>
   </footer>
+
+  <!-- Foto groot bekijken -->
+  <dialog class="fotogroot" id="fotogroot" aria-label="Foto groot bekijken">
+    <button class="fotogroot__sluit" type="button" aria-label="Sluiten">&times;</button>
+    <img alt="">
+    <p class="fotogroot__tekst"></p>
+  </dialog>
 
   <script src="gegevens.js"></script>
   <script src="script.js"></script>
